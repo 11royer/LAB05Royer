@@ -1,9 +1,10 @@
 ## SOLID
 
-/*Aqui mostramos los 5 principios de SOLID*/
+# LOS 5 PRINCIPRIOS DE SOLID
 
-//Principio de responsabilidad unica: La clase debe tener una responsabilidad unica y definida.
+## Principio de responsabilidad unica: La clase debe tener una responsabilidad unica y definida.
 
+### Ejemplo
 class UserManager {
   saveUser(user: User) {
     // Método para guardar un usuario en la base de datos
@@ -16,8 +17,9 @@ class EmailSender {
   }
 }
 
-//Principio de abierto/cerrado: Se pueden añadir nuevas funcionalidades a una clase sin cambiar su codigo existente
+## Principio de abierto/cerrado: Se pueden añadir nuevas funcionalidades a una clase sin cambiar su codigo existente
 
+### Ejemplo
 interface Shape {
   calculateArea(): number;
 }
@@ -34,8 +36,9 @@ class Square implements Shape {
   }
 }
 
-//Principio de sustitucion de Liskov: Objetos de una clase deriva deben poder sustituir a los objetos de la clase base, sin alterar el comportamiento del programa
+## Principio de sustitucion de Liskov: Objetos de una clase deriva deben poder sustituir a los objetos de la clase base, sin alterar el comportamiento del programa
 
+### Ejemplo
 interface Shape {
   calculateArea(): number;
 }
@@ -56,8 +59,9 @@ class Square implements Shape {
   }
 }
 
-//Principio de Segregacion de interfaces: No debe depender de interfaces que no utiliza
+## Principio de Segregacion de interfaces: No debe depender de interfaces que no utiliza
 
+### Ejemplo
 interface Printer {
   print(): void;
 }
@@ -86,8 +90,9 @@ class SuperScanner implements Scanner, Printer {
   }
 }
 
-//Principio de inversion de dependencia: Los modulos de alto nivel, no dependen de los modulos de bajo nivel
+## Principio de inversion de dependencia: Los modulos de alto nivel, no dependen de los modulos de bajo nivel
 
+### Ejemplo
 interface Database {
   query(sql: string): any;
 }
